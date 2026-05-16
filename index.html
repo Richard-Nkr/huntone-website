@@ -1,164 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Huntone — Daily Color Photo Challenge</title>
-    <meta name="description" content="Huntone: a new color every day. Capture 9 photos, build a 3×3 grid, and share your vision of the world.">
-    <meta property="og:title" content="Huntone — Daily Color Photo Challenge">
-    <meta property="og:description" content="See the world in a single color. A new hue every day, 9 photos to capture.">
+    <title>Huntone — Chasse photo quotidienne</title>
+    <meta name="description" content="Huntone : une nouvelle couleur chaque jour. Capture 9 photos, compose une grille 3×3 et partage ta vision du monde.">
+    <meta property="og:title" content="Huntone — Chasse photo quotidienne">
+    <meta property="og:description" content="Vois le monde en une seule couleur. Une teinte unique par jour, 9 photos à capturer.">
     <meta property="og:type" content="website">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
         <a href="/" class="logo">Huntone</a>
         <div class="nav-links">
-            <a href="/privacy">Privacy</a>
+            <a href="/privacy">Confidentialité</a>
             <a href="/support">Support</a>
         </div>
     </nav>
 
     <main>
         <section class="hero">
-            <div class="hero-grid">
-                <div class="hero-content">
-                    <h1>See the world <br><span class="gradient-text">in a single color</span></h1>
-                    <p class="hero-subtitle">
-                        A new color every day. 9 photos to capture. 1 grid to share.
-                        Hunt your city with fresh eyes.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#" class="appstore-btn">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M14.5.1c-.7.1-1.5.5-2 1-.5.5-.9 1.2-1 1.8.8 0 1.6-.3 2.1-.8.5-.5.9-1.3.9-2zM17.9 6.4c-.5-.6-1.1-1-1.9-1-.8 0-1.3.4-2 .4-.7 0-1.3-.4-2-.4-1.2 0-2.3.7-2.9 1.9-1 1.7-.3 4.1.7 5.5.4.7 1 1.4 1.7 1.4.7 0 .9-.4 1.8-.4s1.1.4 1.8.4 1.3-.7 1.8-1.4c.6-.9.8-1.6 1-2.2-1-.4-1.8-1.3-1.8-2.6 0-1.5 1.2-2.6 2.8-2.6z"/>
-                            </svg>
-                            Download on the App Store
-                        </a>
-                    </div>
+            <h1>Vois le monde<br><span class="gradient-text">en une seule couleur</span></h1>
+            <p class="hero-tagline">
+                Chaque jour, Huntone te donne une couleur unique.
+                Chasse-la dans ta ville, capture 9 photos et compose ta grille 3×3.
+            </p>
+            <a href="#" class="appstore-btn">
+                <svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
+                    <path d="M14.5.1c-.7.1-1.5.5-2 1-.5.5-.9 1.2-1 1.8.8 0 1.6-.3 2.1-.8.5-.5.9-1.3.9-2zM17.9 6.4c-.5-.6-1.1-1-1.9-1-.8 0-1.3.4-2 .4-.7 0-1.3-.4-2-.4-1.2 0-2.3.7-2.9 1.9-1 1.7-.3 4.1.7 5.5.4.7 1 1.4 1.7 1.4.7 0 .9-.4 1.8-.4s1.1.4 1.8.4 1.3-.7 1.8-1.4c.6-.9.8-1.6 1-2.2-1-.4-1.8-1.3-1.8-2.6 0-1.5 1.2-2.6 2.8-2.6z"/>
+                </svg>
+                Télécharger sur l'App Store
+            </a>
+        </section>
+
+        <section class="step-section" id="chassez">
+            <div class="step-row">
+                <div class="step-phone">
+                    <img src="1.png" alt="Chassez — Une couleur par jour">
                 </div>
-                <div class="hero-visual">
-                    <div class="phone-frame">
-                        <img src="1.png" alt="Huntone app screenshot" class="phone-screenshot">
-                    </div>
+                <div class="step-text">
+                    <span class="step-badge">01</span>
+                    <h2>CHASSEZ</h2>
+                    <p>Chaque jour, Huntone génère une couleur unique rien que pour toi — parmi des milliers de possibilités. Ouvre l'appareil photo et chasse cette teinte dans ta ville : une porte, une fleur, un mur, la rue. Tout devient un terrain de chasse.</p>
                 </div>
             </div>
         </section>
 
-        <section class="how-it-works">
-            <h2>How it works</h2>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>A Color a Day</h3>
-                    <p>Every day, Huntone generates a unique color just for you — from thousands of possibilities. No two days are alike.</p>
+        <section class="step-section alt" id="composez">
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">02</span>
+                    <h2>COMPOSEZ</h2>
+                    <p>Prends 9 photos, recadre et ajuste chacune dans la tuile parfaite. Ta grille 3×3 prend forme. Ajoute ta ville et signe ton frame du jour.</p>
                 </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Hunt & Capture</h3>
-                    <p>Take 9 photos featuring that color around you. A door, a flower, a sign — anything. Crop and adjust each tile.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Build Your Grid</h3>
-                    <p>Your 9 photos become a beautiful 3×3 frame. Add your city and publish.</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Share & Discover</h3>
-                    <p>Share your frame anywhere. Discover other hunters' grids in the feed. Like, comment, make friends.</p>
+                <div class="step-phone">
+                    <img src="2.png" alt="Composez — 9 photos, 1 grille">
                 </div>
             </div>
         </section>
 
-        <section class="features">
-            <h2>Features</h2>
-            <div class="feature-list">
-                <div class="feature">
-                    <span class="feature-icon">🎨</span>
-                    <div>
-                        <h4>Thousands of Colors</h4>
-                        <p>Every day a unique hue: Rouge vif, Bleu sombre, Menthe doux — and thousands more.</p>
-                    </div>
+        <section class="step-section" id="partagez">
+            <div class="step-row">
+                <div class="step-phone">
+                    <img src="3.png" alt="Partagez — Export et partage">
                 </div>
-                <div class="feature">
-                    <span class="feature-icon">📸</span>
-                    <div>
-                        <h4>3×3 Photo Grid</h4>
-                        <p>Per-tile crop and zoom. Compose each photo into the perfect frame.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">📍</span>
-                    <div>
-                        <h4>City Tagged</h4>
-                        <p>Every frame carries your city. Show where you hunted.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">👥</span>
-                    <div>
-                        <h4>Social Feed</h4>
-                        <p>Discover frames from hunters worldwide. Like, comment, add friends.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">🌍</span>
-                    <div>
-                        <h4>Bilingual</h4>
-                        <p>Full English and French support. Built for the world.</p>
-                    </div>
-                </div>
-                <div class="feature">
-                    <span class="feature-icon">☁️</span>
-                    <div>
-                        <h4>Cloud Synced</h4>
-                        <p>Your grids saved locally and synced. Never lose a frame.</p>
-                    </div>
+                <div class="step-text">
+                    <span class="step-badge">03</span>
+                    <h2>PARTAGEZ</h2>
+                    <p>Ton frame est prêt. Exporte-le en haute résolution et partage-le partout : Instagram, Messages, WhatsApp. Montre au monde comment tu vois la couleur du jour.</p>
                 </div>
             </div>
         </section>
 
-        <section class="screenshots">
-            <h2>See it in action</h2>
-            <div class="screenshot-carousel">
-                <div class="screenshot-item">
-                    <img src="1.png" alt="Daily color reveal" loading="lazy">
+        <section class="step-section alt" id="explorez">
+            <div class="step-row">
+                <div class="step-text">
+                    <span class="step-badge">04</span>
+                    <h2>EXPLOREZ</h2>
+                    <p>Découvre les frames des autres chasseurs dans le feed. Like, commente et trouve l'inspiration. Chaque ville, chaque œil raconte une histoire différente autour de la même couleur.</p>
                 </div>
-                <div class="screenshot-item">
-                    <img src="2.png" alt="Camera capture grid" loading="lazy">
+                <div class="step-phone">
+                    <img src="4.png" alt="Explorez — Feed social">
                 </div>
-                <div class="screenshot-item">
-                    <img src="3.png" alt="Completed frame" loading="lazy">
+            </div>
+        </section>
+
+        <section class="step-section" id="gerez">
+            <div class="step-row">
+                <div class="step-phone">
+                    <img src="5.png" alt="Gérez — Profil et amis">
                 </div>
-                <div class="screenshot-item">
-                    <img src="4.png" alt="Social feed" loading="lazy">
-                </div>
-                <div class="screenshot-item">
-                    <img src="5.png" alt="Profile and grids" loading="lazy">
+                <div class="step-text">
+                    <span class="step-badge">05</span>
+                    <h2>GÉREZ</h2>
+                    <p>Retrouve toutes tes grilles dans ton profil. Ajoute des amis, suis leurs chasses et comparez vos visions. Ton univers photo, organisé.</p>
                 </div>
             </div>
         </section>
 
         <section class="cta">
-            <h2>Start hunting today</h2>
-            <p>Huntone is free. Available now on iPhone.</p>
+            <h2>Prêt à chasser ?</h2>
+            <p>Huntone est gratuit. Disponible sur iPhone.</p>
             <a href="#" class="appstore-btn">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                <svg width="22" height="22" viewBox="0 0 20 20" fill="currentColor">
                     <path d="M14.5.1c-.7.1-1.5.5-2 1-.5.5-.9 1.2-1 1.8.8 0 1.6-.3 2.1-.8.5-.5.9-1.3.9-2zM17.9 6.4c-.5-.6-1.1-1-1.9-1-.8 0-1.3.4-2 .4-.7 0-1.3-.4-2-.4-1.2 0-2.3.7-2.9 1.9-1 1.7-.3 4.1.7 5.5.4.7 1 1.4 1.7 1.4.7 0 .9-.4 1.8-.4s1.1.4 1.8.4 1.3-.7 1.8-1.4c.6-.9.8-1.6 1-2.2-1-.4-1.8-1.3-1.8-2.6 0-1.5 1.2-2.6 2.8-2.6z"/>
                 </svg>
-                Download on the App Store
+                Télécharger sur l'App Store
             </a>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Huntone. All rights reserved.</p>
+        <p>&copy; 2026 Huntone</p>
         <div class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
+            <a href="/privacy">Confidentialité</a>
             <a href="/support">Support</a>
         </div>
     </footer>
