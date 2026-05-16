@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    color: #111;
+    background: #fff;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ── Nav ─────────────────────────────── */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    color: #111;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: color .15s;
+}
+
+.nav-links a:hover {
+    color: #111;
+}
+
+/* ── Hero ─────────────────────────────── */
+
+.hero {
+    padding: 60px 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 24px;
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #E63946, #F4A261, #2A9D8F, #264653, #9B5DE5);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-shift 6s ease infinite;
+}
+
+@keyframes gradient-shift {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+}
+
+.hero-subtitle {
+    font-size: 18px;
+    color: #555;
+    max-width: 440px;
+    margin-bottom: 32px;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.appstore-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #111;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: background .2s, transform .2s;
+}
+
+.appstore-btn:hover {
+    background: #333;
+    transform: translateY(-1px);
+}
+
+/* ── Phone Mock ────────────────────────── */
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+}
+
+.phone-frame {
+    background: #111;
+    border-radius: 40px;
+    padding: 12px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
+}
+
+.phone-screen {
+    background: #fff;
+    border-radius: 30px;
+    padding: 32px 24px;
+    width: 260px;
+    aspect-ratio: 9 / 16;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mock-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    width: 180px;
+    height: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.mock-tile {
+    border-radius: 2px;
+}
+
+.mock-label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #E63946;
+    letter-spacing: 1px;
+}
+
+/* ── How it Works ──────────────────────── */
+
+.how-it-works {
+    background: #f8f8f8;
+    padding: 80px 40px;
+}
+
+.how-it-works h2,
+.features h2,
+.cta h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 56px;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #111;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.step p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ── Features ──────────────────────────── */
+
+.features {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 48px;
+}
+
+.feature {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.feature h4 {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.feature p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ── CTA ───────────────────────────────── */
+
+.cta {
+    background: #f8f8f8;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.cta p {
+    color: #555;
+    margin-bottom: 32px;
+    font-size: 16px;
+}
+
+/* ── Footer ────────────────────────────── */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #eee;
+    font-size: 14px;
+    color: #999;
+}
+
+.footer-links {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    color: #111;
+}
+
+/* ── Legal Pages ───────────────────────── */
+
+.legal-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 60px 40px 80px;
+}
+
+.legal-page h1 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 8px;
+}
+
+.legal-page .last-updated {
+    color: #999;
+    margin-bottom: 48px;
+    font-size: 14px;
+}
+
+.legal-page section {
+    margin-bottom: 40px;
+}
+
+.legal-page h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    letter-spacing: -0.3px;
+}
+
+.legal-page h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 24px;
+    margin-bottom: 10px;
+}
+
+.legal-page p {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.legal-page ul {
+    padding-left: 24px;
+    margin-bottom: 12px;
+}
+
+.legal-page li {
+    font-size: 15px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.legal-page a {
+    color: #111;
+    text-decoration: underline;
+}
+
+/* ── Responsive ────────────────────────── */
+
+@media (max-width: 900px) {
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-visual {
+        order: -1;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .steps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .phone-frame {
+        padding: 10px;
+    }
+
+    .phone-screen {
+        width: 200px;
+        padding: 24px 16px;
+    }
+
+    .mock-grid {
+        width: 140px;
+        height: 186px;
+    }
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 20px 24px;
+    }
+
+    .hero {
+        padding: 40px 24px 60px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+    .how-it-works,
+    .features,
+    .cta {
+        padding: 60px 24px;
+    }
+
+    .how-it-works h2,
+    .features h2,
+    .cta h2 {
+        font-size: 28px;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+    }
+
+    .legal-page {
+        padding: 40px 24px 60px;
+    }
+
+    .legal-page h1 {
+        font-size: 32px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 24px;
+    }
+}
