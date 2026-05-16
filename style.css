@@ -127,44 +127,55 @@ nav {
 .phone-frame {
     background: #111;
     border-radius: 40px;
-    padding: 12px;
+    padding: 10px;
     box-shadow: 0 30px 60px rgba(0, 0, 0, .15);
+    width: 280px;
 }
 
-.phone-screen {
-    background: #fff;
-    border-radius: 30px;
-    padding: 32px 24px;
-    width: 260px;
-    aspect-ratio: 9 / 16;
+.phone-screenshot {
+    display: block;
+    width: 100%;
+    border-radius: 32px;
+}
+
+/* ── Screenshots Carousel ──────────────── */
+
+    .screenshots {
+        padding: 60px 24px;
+    }
+
+    .screenshot-item {
+        width: 200px;
+    }
+
+.screenshots h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin-bottom: 56px;
+}
+
+.screenshot-carousel {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 24px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 16px;
 }
 
-.mock-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 2px;
-    width: 180px;
-    height: 240px;
-    border-radius: 6px;
-    overflow: hidden;
-    margin-bottom: 16px;
+.screenshot-item {
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    width: 240px;
 }
 
-.mock-tile {
-    border-radius: 2px;
-}
-
-.mock-label {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #E63946;
-    letter-spacing: 1px;
+.screenshot-item img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .1);
 }
 
 /* ── How it Works ──────────────────────── */
@@ -388,17 +399,13 @@ footer {
     }
 
     .phone-frame {
-        padding: 10px;
+        width: 220px;
+        padding: 8px;
+        border-radius: 32px;
     }
 
-    .phone-screen {
-        width: 200px;
-        padding: 24px 16px;
-    }
-
-    .mock-grid {
-        width: 140px;
-        height: 186px;
+    .phone-screenshot {
+        border-radius: 26px;
     }
 }
 
