@@ -26,7 +26,7 @@ header {
     letter-spacing: -0.5px;
 }
 
-nav { display: flex; gap: 28px; }
+nav { display: flex; gap: 28px; align-items: center; }
 
 nav a {
     color: #888;
@@ -36,6 +36,26 @@ nav a {
     transition: color .15s;
 }
 nav a:hover { color: #111; }
+
+.lang-toggle {
+    background: none;
+    border: 1.5px solid #ddd;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #888;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .15s;
+}
+.lang-toggle:hover {
+    border-color: #111;
+    color: #111;
+}
+
+html[lang="fr"] [lang="en"] { display: none; }
+html[lang="en"] [lang="fr"] { display: none; }
 
 /* ── Hero ───────────────────────────── */
 

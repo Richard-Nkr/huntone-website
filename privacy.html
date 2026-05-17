@@ -1,90 +1,157 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy — Huntone</title>
-    <meta name="description" content="Huntone privacy policy. Learn how we handle your data.">
+    <title>Politique de confidentialité — Huntone</title>
+    <meta name="description" content="Politique de confidentialité Huntone. Découvrez comment nous traitons vos données.">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon-1024.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <header>
         <a href="/" class="logo">Huntone</a>
-        <div class="nav-links">
+        <nav>
             <a href="/">Home</a>
-            <a href="/privacy">Privacy</a>
-            <a href="/support">Support</a>
-        </div>
-    </nav>
+            <a href="/privacy.html" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+            <a href="/support.html" data-fr="Support" data-en="Support">Support</a>
+            <button id="langToggle" class="lang-toggle" aria-label="Toggle language">EN</button>
+        </nav>
+    </header>
 
     <main class="legal-page">
-        <h1>Privacy Policy</h1>
-        <p class="last-updated">Last updated: May 16, 2026</p>
+        <h1 lang="fr">Politique de confidentialité</h1>
+        <h1 lang="en">Privacy Policy</h1>
+        <p class="last-updated" lang="fr">Dernière mise à jour : 17 mai 2026</p>
+        <p class="last-updated" lang="en">Last updated: May 17, 2026</p>
 
         <section>
-            <h2>1. Information We Collect</h2>
-            <p>Huntone collects the following information to provide and improve the service:</p>
+            <h2 lang="fr">1. Informations collectées</h2>
+            <h2 lang="en">1. Information We Collect</h2>
+            <p lang="fr">Huntone collecte les informations suivantes pour fournir et améliorer le service :</p>
+            <p lang="en">Huntone collects the following information to provide and improve the service:</p>
             <ul>
-                <li><strong>Account information:</strong> Email address, username, and authentication provider (Apple, Google, or email).</li>
-                <li><strong>Profile information:</strong> Avatar image and display name (optional).</li>
-                <li><strong>Photos:</strong> Images you capture or upload within the app to compose your daily grid frames.</li>
-                <li><strong>Published frames:</strong> When you choose to publish a frame, it becomes visible to other users in the social feed, along with your username and the city associated with the frame.</li>
-                <li><strong>Location data:</strong> We use your approximate location solely to determine your city name for published frames. Precise GPS coordinates are never stored or shared.</li>
-                <li><strong>Social data:</strong> Friends list, likes, and comments you make on published frames.</li>
+                <li lang="fr"><strong>Informations de compte :</strong> adresse e-mail, nom d'utilisateur et fournisseur d'authentification (Apple, Google ou e-mail).</li>
+                <li lang="en"><strong>Account information:</strong> email address, username, and authentication provider (Apple, Google, or email).</li>
+                <li lang="fr"><strong>Profil :</strong> photo de profil et nom d'affichage (optionnels).</li>
+                <li lang="en"><strong>Profile information:</strong> avatar image and display name (optional).</li>
+                <li lang="fr"><strong>Photos :</strong> images capturées ou importées dans l'application pour composer vos grilles quotidiennes.</li>
+                <li lang="en"><strong>Photos:</strong> images you capture or upload within the app to compose your daily grid frames.</li>
+                <li lang="fr"><strong>Frames publiés :</strong> lorsque vous publiez un frame, il devient visible pour les autres utilisateurs dans le flux, avec votre nom d'utilisateur et la ville associée.</li>
+                <li lang="en"><strong>Published frames:</strong> when you choose to publish a frame, it becomes visible to other users in the social feed, along with your username and the city associated with the frame.</li>
+                <li lang="fr"><strong>Données de localisation :</strong> nous utilisons votre localisation approximative uniquement pour déterminer le nom de votre ville pour les frames publiés. Aucune coordonnée GPS précise n'est stockée ni partagée.</li>
+                <li lang="en"><strong>Location data:</strong> we use your approximate location solely to determine your city name for published frames. Precise GPS coordinates are never stored or shared.</li>
+                <li lang="fr"><strong>Données sociales :</strong> liste d'amis, likes et commentaires sur les frames publiés.</li>
+                <li lang="en"><strong>Social data:</strong> friends list, likes, and comments you make on published frames.</li>
             </ul>
         </section>
 
         <section>
-            <h2>2. How We Use Your Information</h2>
+            <h2 lang="fr">2. Utilisation de vos informations</h2>
+            <h2 lang="en">2. How We Use Your Information</h2>
             <ul>
-                <li>To authenticate you and maintain your account</li>
-                <li>To display your profile (username, avatar) to other users</li>
-                <li>To publish your frames in the social feed when you choose to share them</li>
-                <li>To determine your city name for published frames (location lookup only, no coordinates stored)</li>
-                <li>To facilitate social features: friends, likes, and comments</li>
+                <li lang="fr">Vous authentifier et maintenir votre compte</li>
+                <li lang="en">To authenticate you and maintain your account</li>
+                <li lang="fr">Afficher votre profil (nom d'utilisateur, avatar) aux autres utilisateurs</li>
+                <li lang="en">To display your profile (username, avatar) to other users</li>
+                <li lang="fr">Publier vos frames dans le flux social lorsque vous choisissez de les partager</li>
+                <li lang="en">To publish your frames in the social feed when you choose to share them</li>
+                <li lang="fr">Déterminer le nom de votre ville pour les frames publiés (recherche de localisation uniquement, aucune coordonnée stockée)</li>
+                <li lang="en">To determine your city name for published frames (location lookup only, no coordinates stored)</li>
+                <li lang="fr">Faciliter les fonctionnalités sociales : amis, likes et commentaires</li>
+                <li lang="en">To facilitate social features: friends, likes, and comments</li>
             </ul>
         </section>
 
         <section>
-            <h2>3. Data Storage & Third-Party Services</h2>
-            <p>Huntone uses <strong>Supabase</strong> as its cloud backend provider. Your data is stored on Supabase servers. Supabase's privacy practices can be reviewed at <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</p>
-            <p>Photos are stored locally on your device. Published frame images are uploaded to Supabase Storage and made publicly accessible via the feed.</p>
+            <h2 lang="fr">3. Stockage des données et services tiers</h2>
+            <h2 lang="en">3. Data Storage & Third-Party Services</h2>
+            <p lang="fr">Huntone utilise <strong>Supabase</strong> comme backend cloud. Vos données sont stockées sur les serveurs Supabase. Les pratiques de confidentialité de Supabase sont consultables sur <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</p>
+            <p lang="en">Huntone uses <strong>Supabase</strong> as its cloud backend provider. Your data is stored on Supabase servers. Supabase's privacy practices can be reviewed at <a href="https://supabase.com/privacy" target="_blank" rel="noopener">supabase.com/privacy</a>.</p>
+            <p lang="fr">Les photos sont stockées localement sur votre appareil. Les images des frames publiés sont téléchargées sur Supabase Storage et rendues accessibles publiquement via le flux.</p>
+            <p lang="en">Photos are stored locally on your device. Published frame images are uploaded to Supabase Storage and made publicly accessible via the feed.</p>
         </section>
 
         <section>
-            <h2>4. Data Sharing</h2>
-            <p>We do not sell, trade, or rent your personal information to third parties. Your published frames, username, and avatar are visible to other Huntone users through the social feed. Unpublished photos and grids remain private on your device.</p>
+            <h2 lang="fr">4. Partage des données</h2>
+            <h2 lang="en">4. Data Sharing</h2>
+            <p lang="fr">Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des tiers. Vos frames publiés, votre nom d'utilisateur et votre avatar sont visibles par les autres utilisateurs Huntone via le flux social. Les photos et grilles non publiées restent privées sur votre appareil.</p>
+            <p lang="en">We do not sell, trade, or rent your personal information to third parties. Your published frames, username, and avatar are visible to other Huntone users through the social feed. Unpublished photos and grids remain private on your device.</p>
         </section>
 
         <section>
-            <h2>5. Data Retention & Deletion</h2>
-            <p>Your data is retained as long as your account is active. You can delete your account at any time by contacting us (see Section 7). Upon account deletion:</p>
+            <h2 lang="fr">5. Conservation et suppression des données</h2>
+            <h2 lang="en">5. Data Retention & Deletion</h2>
+            <p lang="fr">Vos données sont conservées tant que votre compte est actif. Vous pouvez supprimer votre compte à tout moment en nous contactant (voir section 7). Lors de la suppression du compte :</p>
+            <p lang="en">Your data is retained as long as your account is active. You can delete your account at any time by contacting us (see Section 7). Upon account deletion:</p>
             <ul>
-                <li>Your profile, published frames, comments, and likes are removed from our servers</li>
-                <li>Your local data (photos, grids) remains on your device until you delete the app</li>
+                <li lang="fr">Votre profil, vos frames publiés, commentaires et likes sont supprimés de nos serveurs</li>
+                <li lang="en">Your profile, published frames, comments, and likes are removed from our servers</li>
+                <li lang="fr">Vos données locales (photos, grilles) restent sur votre appareil jusqu'à la suppression de l'application</li>
+                <li lang="en">Your local data (photos, grids) remains on your device until you delete the app</li>
             </ul>
         </section>
 
         <section>
-            <h2>6. Children's Privacy</h2>
-            <p>Huntone is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
+            <h2 lang="fr">6. Confidentialité des enfants</h2>
+            <h2 lang="en">6. Children's Privacy</h2>
+            <p lang="fr">Huntone n'est pas destinée aux enfants de moins de 13 ans. Nous ne collectons pas sciemment de données personnelles d'enfants de moins de 13 ans.</p>
+            <p lang="en">Huntone is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13.</p>
         </section>
 
         <section>
-            <h2>7. Contact Us</h2>
-            <p>If you have questions about this Privacy Policy or wish to delete your data, contact us at:</p>
-            <p><strong>Email:</strong> <a href="mailto:richard.nakarmi5@gmail.com">richard.nakarmi5@gmail.com</a></p>
+            <h2 lang="fr">7. Nous contacter</h2>
+            <h2 lang="en">7. Contact Us</h2>
+            <p lang="fr">Pour toute question concernant cette politique de confidentialité ou pour demander la suppression de vos données, contactez-nous à :</p>
+            <p lang="en">If you have questions about this Privacy Policy or wish to delete your data, contact us at:</p>
+            <p><strong>Email :</strong> <a href="mailto:hello@huntone.online">hello@huntone.online</a></p>
         </section>
 
         <section>
-            <h2>8. Changes to This Policy</h2>
-            <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+            <h2 lang="fr">8. Modifications de cette politique</h2>
+            <h2 lang="en">8. Changes to This Policy</h2>
+            <p lang="fr">Nous pouvons mettre à jour cette politique de temps à autre. Les modifications seront publiées sur cette page avec une date actualisée.</p>
+            <p lang="en">We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Huntone. All rights reserved.</p>
+        <span>&copy; 2026 Huntone</span>
+        <span>
+            <a href="/privacy.html" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+            &nbsp;·&nbsp;
+            <a href="/support.html" data-fr="Support" data-en="Support">Support</a>
+        </span>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('langToggle');
+        const html = document.documentElement;
+        let lang = localStorage.getItem('huntone-lang') || 'fr';
+        html.lang = lang;
+        toggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+        updateLang(lang);
+
+        toggle.addEventListener('click', () => {
+            lang = lang === 'fr' ? 'en' : 'fr';
+            html.lang = lang;
+            toggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+            localStorage.setItem('huntone-lang', lang);
+            updateLang(lang);
+        });
+
+        function updateLang(lang) {
+            document.querySelectorAll('[lang]').forEach(el => {
+                el.style.display = el.lang === lang ? '' : 'none';
+            });
+            document.querySelectorAll('[data-fr]').forEach(el => {
+                el.textContent = lang === 'fr' ? el.dataset.fr : el.dataset.en;
+            });
+            document.title = lang === 'fr'
+                ? 'Politique de confidentialité — Huntone'
+                : 'Privacy Policy — Huntone';
+        }
+    </script>
 </body>
 </html>

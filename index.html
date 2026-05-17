@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Huntone — Chasse photo quotidienne</title>
     <meta name="description" content="Huntone : une couleur unique chaque jour. Capture 9 photos, compose une grille 3×3 et partage ta vision du monde.">
-    <meta property="og:title" content="Huntone — Chasse photo quotidienne">
-    <meta property="og:description" content="Vois le monde en une seule couleur. Une teinte unique par jour, 9 photos à capturer.">
-    <meta property="og:image" content="1.png">
+    <meta property="og:title" content="Huntone — Daily Photo Hunt">
+    <meta property="og:description" content="One color a day. 9 photos. 1 grid.">
+    <meta property="og:image" content="icon-1024.png">
     <meta property="og:type" content="website">
+    <link rel="icon" href="icon-1024.png">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,84 +19,126 @@
     <header>
         <a href="/" class="logo">Huntone</a>
         <nav>
-            <a href="/privacy">Confidentialité</a>
-            <a href="/support">Support</a>
+            <a href="/privacy.html" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
+            <a href="/support.html" data-fr="Support" data-en="Support">Support</a>
+            <button id="langToggle" class="lang-toggle" aria-label="Toggle language">EN</button>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Vois le monde<br><span class="gradient-text">en une seule couleur</span></h1>
-        <p>Chaque jour, une couleur unique. 9 photos. 1 grille.</p>
-        <a href="#" class="pill">Disponible sur l'App Store →</a>
-    </section>
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1 lang="fr">Vois le monde<br><span class="gradient-text">en une seule couleur</span></h1>
+            <h1 lang="en">See the world<br><span class="gradient-text">in one color</span></h1>
+            <p lang="fr">Chaque jour, une couleur unique. 9 photos. 1 grille.</p>
+            <p lang="en">Every day, one color. 9 photos. 1 grid.</p>
+            <a href="#" class="pill" lang="fr">Disponible sur l'App Store →</a>
+            <a href="#" class="pill" lang="en">Available on the App Store →</a>
+        </section>
 
-    <section class="shot-block">
-        <div class="shot-wrap">
-            <img src="1.png" alt="Chassez">
-        </div>
-        <div class="shot-label">
-            <em>01</em>
-            <h2>CHASSEZ</h2>
-            <p>Une couleur par jour. Ouvre l'appareil et pars en chasse dans ta ville.</p>
-        </div>
-    </section>
+        <!-- FEATURES -->
+        <section class="shot-block">
+            <div class="shot-wrap"><img src="1.png" alt="Hunt"></div>
+            <div class="shot-label">
+                <em>01</em>
+                <h2 lang="fr">CHASSEZ</h2>
+                <h2 lang="en">HUNT</h2>
+                <p lang="fr">Une couleur par jour. Ouvre l'appareil et pars en chasse dans ta ville.</p>
+                <p lang="en">One color a day. Open the camera and hunt through your city.</p>
+            </div>
+        </section>
 
-    <section class="shot-block alt">
-        <div class="shot-wrap">
-            <img src="2.png" alt="Composez">
-        </div>
-        <div class="shot-label">
-            <em>02</em>
-            <h2>COMPOSEZ</h2>
-            <p>9 photos, recadre et ajuste chaque tuile. Ta grille 3×3 prend vie.</p>
-        </div>
-    </section>
+        <section class="shot-block alt">
+            <div class="shot-wrap"><img src="2.png" alt="Compose"></div>
+            <div class="shot-label">
+                <em>02</em>
+                <h2 lang="fr">COMPOSEZ</h2>
+                <h2 lang="en">COMPOSE</h2>
+                <p lang="fr">9 photos, recadre et ajuste chaque tuile. Ta grille 3×3 prend vie.</p>
+                <p lang="en">9 photos, crop and adjust each tile. Your 3×3 grid comes to life.</p>
+            </div>
+        </section>
 
-    <section class="shot-block">
-        <div class="shot-wrap">
-            <img src="3.png" alt="Partagez">
-        </div>
-        <div class="shot-label">
-            <em>03</em>
-            <h2>PARTAGEZ</h2>
-            <p>Ton frame est prêt. Export HD et partage sur tous tes réseaux.</p>
-        </div>
-    </section>
+        <section class="shot-block">
+            <div class="shot-wrap"><img src="3.png" alt="Share"></div>
+            <div class="shot-label">
+                <em>03</em>
+                <h2 lang="fr">PARTAGEZ</h2>
+                <h2 lang="en">SHARE</h2>
+                <p lang="fr">Ton frame est prêt. Export HD et partage sur tous tes réseaux.</p>
+                <p lang="en">Your frame is ready. Export in HD and share everywhere.</p>
+            </div>
+        </section>
 
-    <section class="shot-block alt">
-        <div class="shot-wrap">
-            <img src="4.png" alt="Explorez">
-        </div>
-        <div class="shot-label">
-            <em>04</em>
-            <h2>EXPLOREZ</h2>
-            <p>Découvre les frames des autres chasseurs. Like, commente, inspire-toi.</p>
-        </div>
-    </section>
+        <section class="shot-block alt">
+            <div class="shot-wrap"><img src="4.png" alt="Explore"></div>
+            <div class="shot-label">
+                <em>04</em>
+                <h2 lang="fr">EXPLOREZ</h2>
+                <h2 lang="en">EXPLORE</h2>
+                <p lang="fr">Découvre les frames des autres chasseurs. Like, commente, inspire-toi.</p>
+                <p lang="en">Discover frames from other hunters. Like, comment, get inspired.</p>
+            </div>
+        </section>
 
-    <section class="shot-block">
-        <div class="shot-wrap">
-            <img src="5.png" alt="Gérez">
-        </div>
-        <div class="shot-label">
-            <em>05</em>
-            <h2>GÉREZ</h2>
-            <p>Ton profil, tes grilles, tes amis. Tout au même endroit.</p>
-        </div>
-    </section>
+        <section class="shot-block">
+            <div class="shot-wrap"><img src="5.png" alt="Profile"></div>
+            <div class="shot-label">
+                <em>05</em>
+                <h2 lang="fr">GÉREZ</h2>
+                <h2 lang="en">MANAGE</h2>
+                <p lang="fr">Ton profil, tes grilles, tes amis. Tout au même endroit.</p>
+                <p lang="en">Your profile, your grids, your friends. All in one place.</p>
+            </div>
+        </section>
 
-    <section class="cta">
-        <h2>Prêt à chasser ?</h2>
-        <a href="#" class="pill">Télécharger sur l'App Store →</a>
-    </section>
+        <!-- CTA -->
+        <section class="cta">
+            <h2 lang="fr">Prêt à chasser ?</h2>
+            <h2 lang="en">Ready to hunt?</h2>
+            <a href="#" class="pill" lang="fr">Télécharger sur l'App Store →</a>
+            <a href="#" class="pill" lang="en">Download on the App Store →</a>
+        </section>
+    </main>
 
     <footer>
         <span>&copy; 2026 Huntone</span>
         <span>
-            <a href="/privacy">Confidentialité</a>
+            <a href="/privacy.html" data-fr="Confidentialité" data-en="Privacy">Confidentialité</a>
             &nbsp;·&nbsp;
-            <a href="/support">Support</a>
+            <a href="/support.html" data-fr="Support" data-en="Support">Support</a>
+            &nbsp;·&nbsp;
+            <a href="mailto:hello@huntone.online">hello@huntone.online</a>
         </span>
     </footer>
+
+    <script>
+        const toggle = document.getElementById('langToggle');
+        const html = document.documentElement;
+        let lang = localStorage.getItem('huntone-lang') || 'fr';
+        html.lang = lang;
+        toggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+        updateLang(lang);
+
+        toggle.addEventListener('click', () => {
+            lang = lang === 'fr' ? 'en' : 'fr';
+            html.lang = lang;
+            toggle.textContent = lang === 'fr' ? 'EN' : 'FR';
+            localStorage.setItem('huntone-lang', lang);
+            updateLang(lang);
+        });
+
+        function updateLang(lang) {
+            document.querySelectorAll('[lang]').forEach(el => {
+                el.style.display = el.lang === lang ? '' : 'none';
+            });
+            document.querySelectorAll('[data-fr]').forEach(el => {
+                el.textContent = lang === 'fr' ? el.dataset.fr : el.dataset.en;
+            });
+            document.title = lang === 'fr'
+                ? 'Huntone — Chasse photo quotidienne'
+                : 'Huntone — Daily Photo Hunt';
+        }
+    </script>
 </body>
 </html>
